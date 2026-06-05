@@ -119,44 +119,6 @@ Novo arquivo → S3 Bronze → S3 Event → Lambda → Glue ETL → Silver atual
 
 ---
 
-## Como rodar localmente
-
-### Pré-requisitos
-
-- Python 3.9+
-- AWS CLI configurada (`aws configure`)
-- Conta AWS com acesso a S3, Glue e Athena
-- Chave de API da Anthropic
-
-### Instalação
-
-```bash
-git clone https://github.com/rreghine/agentaws
-cd agentaws
-pip install -r requirements.txt
-```
-
-### Variáveis de ambiente
-
-Crie um arquivo `.env` na raiz:
-
-```
-ANTHROPIC_API_KEY=sua_chave_aqui
-AWS_ACCESS_KEY_ID=sua_access_key
-AWS_SECRET_ACCESS_KEY=sua_secret_key
-AWS_DEFAULT_REGION=us-east-1
-```
-
-### Executar
-
-```bash
-python src/app.py
-```
-
-Acesse: [http://127.0.0.1:5000](http://127.0.0.1:5000)
-
----
-
 ## Estrutura do projeto
 
 ```
